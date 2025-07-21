@@ -1,12 +1,34 @@
-# React + Vite
+# 💬 React Chatbot UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple and responsive chatbot interface built using **React**. It allows users to send messages, get AI responses via API, and provides a toggle button to show/hide the chatbot.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 📩 Send and receive chat messages
+- 🔄 Smooth toggle with rotating button
+- 🧠 Dynamic AI responses from API (like OpenAI)
+- 💅 Responsive UI with animation and styling
+- ⚙️ Environment-based API configuration using `.env`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+
+git clone https://github.com/yourusername/react-chatbot-ui.git
+cd react-chatbot-ui
+npm install
+VITE_API_URL=https://your-api-endpoint.com/api
+src/
+├── components/
+│   ├── ChatMessage.jsx      # Renders each message (user/bot)
+│   ├── ChatForm.jsx         # Input form for user messages
+│   └── ChatbotIcon.jsx      # Bot avatar/icon
+├── App.jsx                  # Main component (handles toggle, chat logic)
+├── main.jsx                 # React entry point
+├── index.css                # Global styles
+└── ...
